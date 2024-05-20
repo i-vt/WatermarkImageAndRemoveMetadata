@@ -5,7 +5,7 @@ from Helper import *
 def remove_metadata(image_path, output_path):
   
     with Image.open(image_path) as img:
-        if img.mode == 'RGBA':  # Check if image is in RGBA mode
+        if img.mode == 'RGBA': 
             img = img.convert('RGB')  # Convert to RGB to remove transparency
 
         data = img.getdata()
