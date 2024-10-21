@@ -6,6 +6,14 @@ Watermark an Image And Remove image Metadata
 2. Modify directory in `processing_dir = "/Users/user/Projects/ImageLaundermat/"` and "br 23 ap" watermark for your own in `original, watermarked = watermark_directory(processing_dir, "br 23 ap", True)` in main.py
 3. Run main.py
 
+or
+
+Use  `StandaloneTool.py`
+- To clean a directory of image files and remove metadata: ```python main.py --dir /path/to/images --clean```
+- To apply a watermark to images in a directory: ```python main.py --dir /path/to/images --watermark "Your Watermark" --watermarking```
+- To clean and watermark images in a directory: ```python main.py --dir /path/to/images --watermark "Your Watermark" --clean --watermarking```
+
+
 ## Disclaimer
 
 - General Use: This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
